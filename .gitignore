@@ -1,0 +1,77 @@
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*~
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Temporary Files
+*.tmp
+*.temp
+*.log
+*.bak
+*.backup
+.cache/
+tmp/
+temp/
+
+# Build and Output Directories
+dist/
+build/
+out/
+target/
+*.pyc
+__pycache__/
+
+# Environment and Configuration
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+secrets/
+config/local.*
+
+# Node modules (if Node.js is used)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Large media files (optional, adjust as needed)
+*.mp4
+*.avi
+*.mov
+*.wmv
+
+# Workflow output files (add specific patterns as needed)
+**/output/*.pdf
+**/output/*.docx
+**/results/
