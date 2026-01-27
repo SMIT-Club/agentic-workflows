@@ -21,7 +21,18 @@ itba-agentic-workflows/
 
 ### Problem Statement Decomposition
 
-Located in `workflows/problem-statement-decomposition/`, this workflow helps break down complex problem statements into manageable components for analysis.
+Located in `workflows/problem-statement-decomposition/`, this workflow helps break down complex problem statements into manageable components for analysis using a six-agent pipeline:
+
+| Agent | Purpose |
+|-------|---------|
+| **A_Normalizer** | Converts raw text into standardized JSON with ordered content blocks |
+| **B_Extractor** | Extracts verbatim observations into an ordered ledger |
+| **C_Classifier** | Assigns strategic categories and core concept labels |
+| **D_Auditor** | Identifies risks, policy violations, and elicitation gaps |
+| **E_Packager** | Transforms outputs into a student-friendly review artifact |
+| **F_ExcelFormatter** | Converts final JSON to structured Excel spreadsheet |
+
+Designed for ITBA1002 learners, this workflow maintains full traceability from source text to final categorized output.
 
 ## Getting Started
 
@@ -42,10 +53,12 @@ Located in `workflows/problem-statement-decomposition/`, this workflow helps bre
 
 ## Workflow File Conventions
 
-- **Sequential Naming**: Files are named to indicate execution order (e.g., `01-step.md`, `02-step.md`)
-- **Self-Contained**: Each file contains all necessary context and instructions
+- **Agent Naming**: Files are named with letter prefixes to indicate execution order (e.g., `A_Normalizer.md`, `B_Extractor.md`)
+- **JSON I/O**: Each agent accepts and outputs structured JSON matching defined schemas
+- **Self-Contained**: Each file contains all necessary context, instructions, and schema definitions
 - **Markdown Format**: Standard markdown format for compatibility with AI tools
-- **Clear Objectives**: Each step has clearly defined inputs, processes, and outputs
+- **Deterministic Rules**: Agents follow explicit precedence rules for consistent behavior
+- **Error Handling**: All agents return structured error objects when they cannot comply
 
 ## Adding New Workflows
 
