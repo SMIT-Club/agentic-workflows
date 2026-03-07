@@ -1,0 +1,31 @@
+# Agent Catalog
+
+This catalog is the quick index for all shared BA agents and prompts.
+
+> **Note:** This catalog is maintained by the designated integrator. Teams should NOT edit this file in their PRs — update your role documentation in `docs/roles/` instead.
+
+## Agents
+
+| Name | File | Use When | Role Docs | Owner |
+|---|---|---|---|---|
+| Requirements Analyst | [requirements-analyst.agent.md](../.github/agents/requirements-analyst.agent.md) | Elicitation, ambiguity cleanup, acceptance criteria | [Role Guide](roles/requirements-analyst.md) | Team A |
+| Stakeholder Impact Analyzer | [stakeholder-impact.agent.md](../.github/agents/stakeholder-impact.agent.md) | Identifying stakeholders, change impact, communication planning | [Role Guide](roles/stakeholder-impact.md) | Team B |
+| Process Mapper | [process-mapper.agent.md](../.github/agents/process-mapper.agent.md) | Current/future state workflows, gap analysis, bottlenecks | [Role Guide](roles/process-mapper.md) | Team C |
+| BA Review Specialist | [ba-review.agent.md](../.github/agents/ba-review.agent.md) | Quality review, traceability validation, completeness checks | [Role Guide](roles/ba-review.md) | Team D |
+
+## Prompts
+
+| Name | File | Use When | Owner |
+|---|---|---|---|
+| BA Kickoff | [ba-kickoff.prompt.md](../.github/prompts/ba-kickoff.prompt.md) | New initiative kickoff and discovery planning | _TBD_ |
+
+## Adding New Entries
+
+**Process:**
+1. Team creates agent/prompt in their branch
+2. Team updates role documentation in `docs/roles/`
+3. Team opens PR (does NOT edit this catalog)
+4. After PR merges, integrator adds entry to this catalog
+5. Integrator opens single consolidation PR
+
+**Integrator:** `@maintainer` (update with GitHub username)
