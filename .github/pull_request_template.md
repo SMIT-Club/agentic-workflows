@@ -16,7 +16,7 @@ List files modified and summarize changes in 3-4 bullets:
 
 - `.github/agents/my-agent.agent.md` - Added stakeholder impact analysis agent
 - `docs/roles/stakeholder-impact.md` - Added role documentation and examples
-- `docs/agent-catalog.md` - Added catalog entry
+- `docs/problem-statement-decomposition-pipeline.md` - Updated orchestration guidance (if applicable)
 
 ## Testing / Validation
 
@@ -34,12 +34,6 @@ Input: <describe test input>
 Output: <describe result or attach screenshot>
 ```
 
-## Catalog Update
-
-- [ ] `docs/agent-catalog.md` updated with new entry
-- [ ] Owner assigned (GitHub `@username` or team role)
-- [ ] Use case documented with trigger phrases
-
 ## Review Checklist
 
 - [ ] Frontmatter is valid YAML (`name`, `description`, `tools`, `user-invocable`)
@@ -50,6 +44,7 @@ Output: <describe result or attach screenshot>
 - [ ] No implementation code in agent instructions
 - [ ] Constraints section includes clear "DO NOT" boundaries
 - [ ] Examples or walkthroughs included in PR description
+- [ ] Documentation updated to match behavior changes (`docs/roles/` or pipeline docs)
 
 ## Related Issues
 
