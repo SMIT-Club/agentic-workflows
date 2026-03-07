@@ -55,6 +55,7 @@ git checkout -b feat/agent-your-role-teamX
 - Updated `*.agent.md`, `*.prompt.md`, or `*.instructions.md`
 - Updated role documentation in `docs/roles/*.md` (for agent changes)
 - **Do NOT update `docs/agent-catalog.md`** — integrator will handle this after merge
+- Do not create new runtime workflow assets under `workflows/` (use `.github/agents/` + `docs/` orchestration docs)
 - At least one usage example in PR description
 - Reviewer notes describing expected behavior changes
 

@@ -61,6 +61,7 @@ git branch
 - Use an existing agent as a template (e.g., `requirements-analyst.agent.md`)
 - Include YAML frontmatter: `name`, `description`, `tools`, `user-invocable`
 - Write clear constraints, approach, and output format
+- Do not add new runtime assets under `workflows/` (deprecated; use `.github/agents/` + `docs/`)
 
 **Document your agent:**
 - Open your role doc in `docs/roles/` (or create if new)

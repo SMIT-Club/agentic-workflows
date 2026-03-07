@@ -12,6 +12,12 @@ This catalog is the quick index for all shared BA agents and prompts.
 | Stakeholder Impact Analyzer | [stakeholder-impact.agent.md](../.github/agents/stakeholder-impact.agent.md) | Identifying stakeholders, change impact, communication planning | [Role Guide](roles/stakeholder-impact.md) | Team B |
 | Process Mapper | [process-mapper.agent.md](../.github/agents/process-mapper.agent.md) | Current/future state workflows, gap analysis, bottlenecks | [Role Guide](roles/process-mapper.md) | Team C |
 | BA Review Specialist | [ba-review.agent.md](../.github/agents/ba-review.agent.md) | Quality review, traceability validation, completeness checks | [Role Guide](roles/ba-review.md) | Team D |
+| PSD A Normalizer | [psd-a-normalizer.agent.md](../.github/agents/psd-a-normalizer.agent.md) | Normalize raw source text into `A_OUT` with ordered content blocks | [Pipeline Guide](problem-statement-decomposition-pipeline.md#stage-order-a---f) | Integrator |
+| PSD B Extractor | [psd-b-extractor.agent.md](../.github/agents/psd-b-extractor.agent.md) | Extract verbatim observations from `A_OUT` into `B_OUT` | [Pipeline Guide](problem-statement-decomposition-pipeline.md#stage-order-a---f) | Integrator |
+| PSD C Classifier | [psd-c-classifier.agent.md](../.github/agents/psd-c-classifier.agent.md) | Classify observations from `B_OUT` into `C_OUT` categories | [Pipeline Guide](problem-statement-decomposition-pipeline.md#stage-order-a---f) | Integrator |
+| PSD D Auditor | [psd-d-auditor.agent.md](../.github/agents/psd-d-auditor.agent.md) | Audit `B_OUT` and `C_OUT` into risk and gap output `D_OUT` | [Pipeline Guide](problem-statement-decomposition-pipeline.md#stage-order-a---f) | Integrator |
+| PSD E Packager | [psd-e-packager.agent.md](../.github/agents/psd-e-packager.agent.md) | Package pipeline outputs into learner-facing `E_OUT` | [Pipeline Guide](problem-statement-decomposition-pipeline.md#stage-order-a---f) | Integrator |
+| PSD F Excel Formatter | [psd-f-excel-formatter.agent.md](../.github/agents/psd-f-excel-formatter.agent.md) | Convert `E_OUT` into a formatted `.xlsx` workbook | [Pipeline Guide](problem-statement-decomposition-pipeline.md#stage-order-a---f) | Integrator |
 
 ## Prompts
 

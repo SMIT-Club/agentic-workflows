@@ -89,11 +89,9 @@ git commit -m "Add stakeholder impact analyzer agent skeleton"
 # Edit docs/roles/stakeholder-impact.md
 git add docs/roles/stakeholder-impact.md
 git commit -m "Add documentation for stakeholder impact role"
-
-# Update catalog
-git add docs/agent-catalog.md
-git commit -m "Add stakeholder impact entry to catalog"
 ```
+
+> Note: Teams do not update `docs/agent-catalog.md` in feature PRs unless explicitly assigned as integrator.
 
 **Commit message guidelines:**
 - Start with a verb: "Add", "Update", "Fix", "Remove"

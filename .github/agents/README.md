@@ -9,6 +9,7 @@ Use lowercase, hyphenated filenames:
 - `requirements-analyst.agent.md`
 - `stakeholder-impact.agent.md`
 - `process-mapper.agent.md`
+- `psd-a-normalizer.agent.md`
 
 ## Expectations
 
