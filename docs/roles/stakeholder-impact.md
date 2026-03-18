@@ -15,7 +15,7 @@ Invoke this agent when:
 
 ## Agent File
 
-[`.github/agents/stakeholder-impact/stakeholder-impact.agent.md`](../.github/agents/stakeholder-impact/stakeholder-impact.agent.md)
+[`.github/agents/stakeholder-impact/stakeholder-impact.agent.md`](../../.github/agents/stakeholder-impact/stakeholder-impact.agent.md)
 
 ## Input Expectations
 

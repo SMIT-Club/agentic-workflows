@@ -15,7 +15,7 @@ Invoke this agent when:
 
 ## Agent File
 
-[`.github/agents/ba-review/ba-review.agent.md`](../.github/agents/ba-review/ba-review.agent.md)
+[`.github/agents/ba-review/ba-review.agent.md`](../../.github/agents/ba-review/ba-review.agent.md)
 
 ## Input Expectations
 
