@@ -14,7 +14,7 @@ One sentence: What agent/prompt/instruction is changed and why?
 
 List files modified and summarize changes in 3-4 bullets:
 
-- `.github/agents/my-agent.agent.md` - Added stakeholder impact analysis agent
+- `.github/agents/my-agent/my-agent.agent.md` - Added stakeholder impact analysis agent
 - `docs/roles/stakeholder-impact.md` - Added role documentation and examples
 - `docs/problem-statement-decomposition-pipeline.md` - Updated orchestration guidance (if applicable)
 

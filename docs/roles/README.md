@@ -24,15 +24,15 @@ Each agent has a dedicated role doc to:
 
 | Role Doc | Agent File | Team Owner |
 |----------|------------|------------|
-| [requirements-analyst.md](requirements-analyst.md) | `.github/agents/requirements-analyst.agent.md` | Team A |
-| [stakeholder-impact.md](stakeholder-impact.md) | `.github/agents/stakeholder-impact.agent.md` | Team B |
-| [process-mapper.md](process-mapper.md) | `.github/agents/process-mapper.agent.md` | Team C |
-| [ba-review.md](ba-review.md) | `.github/agents/ba-review.agent.md` | Team D |
+| [requirements-analyst.md](requirements-analyst.md) | `.github/agents/requirements-analyst/requirements-analyst.agent.md` | Team A |
+| [stakeholder-impact.md](stakeholder-impact.md) | `.github/agents/stakeholder-impact/stakeholder-impact.agent.md` | Team B |
+| [process-mapper.md](process-mapper.md) | `.github/agents/process-mapper/process-mapper.agent.md` | Team C |
+| [ba-review.md](ba-review.md) | `.github/agents/ba-review/ba-review.agent.md` | Team D |
 
 ## Contribution
 
 When you update an agent:
-1. Update the agent file in `.github/agents/`
+1. Update the agent file in its package under `.github/agents/`
 2. Update the matching role doc in `docs/roles/`
 3. Do NOT edit `docs/agent-catalog.md` (integrator handles this)
 4. Include examples in your PR showing the change impact

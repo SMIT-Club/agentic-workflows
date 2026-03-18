@@ -27,7 +27,7 @@ git pull origin main
 git checkout -b feat/agent-<role>-<team>
 
 # Make changes and commit
-git add .github/agents/my-agent.agent.md
+git add .github/agents/my-agent/my-agent.agent.md
 git commit -m "Add stakeholder impact analyzer agent"
 
 # Sync with latest main before PR
@@ -82,8 +82,8 @@ Examples:
 Edit your assigned files, then commit incrementally:
 
 ```powershell
-# Edit .github/agents/stakeholder-impact.agent.md
-git add .github/agents/stakeholder-impact.agent.md
+# Edit .github/agents/stakeholder-impact/stakeholder-impact.agent.md
+git add .github/agents/stakeholder-impact/stakeholder-impact.agent.md
 git commit -m "Add stakeholder impact analyzer agent skeleton"
 
 # Edit docs/roles/stakeholder-impact.md

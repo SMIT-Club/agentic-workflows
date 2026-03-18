@@ -15,7 +15,7 @@ Invoke this agent when:
 
 ## Agent File
 
-[`.github/agents/process-mapper.agent.md`](../.github/agents/process-mapper.agent.md)
+[`.github/agents/process-mapper/process-mapper.agent.md`](../.github/agents/process-mapper/process-mapper.agent.md)
 
 ## Input Expectations
 

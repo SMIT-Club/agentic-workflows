@@ -6,7 +6,7 @@ Business analysis agents and pipeline specifications for structured analysis, de
 
 This repository is now **agent-first**:
 
-- Runtime behavior is defined in `.github/agents/*.agent.md`
+- Runtime behavior is defined in packaged agent specs under `.github/agents/`
 - Usage and orchestration guidance is defined in `docs/`
 - Legacy `workflows/` assets are deprecated and archived for reference
 
@@ -15,7 +15,7 @@ This repository is now **agent-first**:
 ```text
 itba-agentic-workflows/
 |-- .github/
-|   |-- agents/                   # Canonical shared agent definitions (*.agent.md)
+|   |-- agents/                   # Canonical shared agent packages and specs
 |   |-- prompts/                  # Task-focused prompt templates
 |   |-- instructions/             # Shared instruction files
 |   `-- pull_request_template.md
@@ -46,14 +46,14 @@ Quick links:
 
 ## Problem Statement Decomposition (PSD)
 
-The PSD pipeline is defined by six dedicated agents:
+The PSD pipeline is defined by six dedicated agents in one package:
 
-1. `psd-a-normalizer.agent.md`
-2. `psd-b-extractor.agent.md`
-3. `psd-c-classifier.agent.md`
-4. `psd-d-auditor.agent.md`
-5. `psd-e-packager.agent.md`
-6. `psd-f-excel-formatter.agent.md`
+1. `.github/agents/problem-statement-decomposition/a-normalizer.agent.md`
+2. `.github/agents/problem-statement-decomposition/b-extractor.agent.md`
+3. `.github/agents/problem-statement-decomposition/c-classifier.agent.md`
+4. `.github/agents/problem-statement-decomposition/d-auditor.agent.md`
+5. `.github/agents/problem-statement-decomposition/e-packager.agent.md`
+6. `.github/agents/problem-statement-decomposition/f-excel-formatter.agent.md`
 
 Canonical orchestration and handoff contracts are documented in:
 - [docs/problem-statement-decomposition-pipeline.md](docs/problem-statement-decomposition-pipeline.md)
@@ -78,7 +78,7 @@ Legacy workflow-stage markdown files were moved to:
 
 ## Contributing
 
-- Add or update agent behavior in `.github/agents/`
+- Add or update agent behavior in the appropriate package under `.github/agents/`
 - Update matching documentation in `docs/`
 - Do not use `workflows/` for new runtime assets
 
