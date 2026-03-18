@@ -16,8 +16,10 @@ This repository is now **agent-first**:
 itba-agentic-workflows/
 |-- .github/
 |   |-- agents/                   # Canonical shared agent packages and specs
+|   |-- skills/                   # Reusable procedural Copilot skills
 |   |-- prompts/                  # Task-focused prompt templates
 |   |-- instructions/             # Shared instruction files
+|   |-- copilot-instructions.md   # Repository-wide Copilot behaviour rules
 |   `-- pull_request_template.md
 |-- docs/
 |   |-- agent-catalog.md          # Index of agents and prompts
@@ -43,6 +45,8 @@ Quick links:
 - [PSD Pipeline Guide](docs/problem-statement-decomposition-pipeline.md)
 - [Contribution Guide](docs/contribution-guide.md)
 - [Quick Start](docs/quick-start.md)
+- [Git Operations Prompt](.github/prompts/git-operations.prompt.md)
+- [Git Operations Skill](.github/skills/git-operations/SKILL.md)
 
 ## Problem Statement Decomposition (PSD)
 

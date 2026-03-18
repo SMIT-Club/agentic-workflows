@@ -44,6 +44,7 @@ If you are using an IDE agent to help with Git, also use:
 
 - [`.github/prompts/git-operations.prompt.md`](../.github/prompts/git-operations.prompt.md)
 - [`.github/instructions/git-operations.instructions.md`](../.github/instructions/git-operations.instructions.md)
+- [`.github/skills/git-operations/SKILL.md`](../.github/skills/git-operations/SKILL.md)
 
 **Total reading time: ~35 minutes**
 

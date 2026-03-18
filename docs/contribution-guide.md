@@ -45,6 +45,7 @@ If an IDE agent is performing Git operations, use:
 
 - [`.github/prompts/git-operations.prompt.md`](../.github/prompts/git-operations.prompt.md)
 - [`.github/instructions/git-operations.instructions.md`](../.github/instructions/git-operations.instructions.md)
+- [`.github/skills/git-operations/SKILL.md`](../.github/skills/git-operations/SKILL.md)
 
 ## Pull Request Requirements
 

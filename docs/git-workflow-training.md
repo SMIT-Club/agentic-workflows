@@ -6,6 +6,7 @@ If learners are using an IDE agent to carry out Git commands, pair this guide wi
 
 - [`.github/prompts/git-operations.prompt.md`](../.github/prompts/git-operations.prompt.md)
 - [`.github/instructions/git-operations.instructions.md`](../.github/instructions/git-operations.instructions.md)
+- [`.github/skills/git-operations/SKILL.md`](../.github/skills/git-operations/SKILL.md)
 
 ## Learning Objectives
 
