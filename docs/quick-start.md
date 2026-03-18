@@ -40,6 +40,11 @@ Before writing code, review these essential guides:
 | [Agent Catalog](agent-catalog.md) | See existing agents to avoid overlap | 5 min |
 | [Role Doc Template](roles/requirements-analyst.md) | Example of what your role doc should contain | 5 min |
 
+If you are using an IDE agent to help with Git, also use:
+
+- [`.github/prompts/git-operations.prompt.md`](../.github/prompts/git-operations.prompt.md)
+- [`.github/instructions/git-operations.instructions.md`](../.github/instructions/git-operations.instructions.md)
+
 **Total reading time: ~35 minutes**
 
 ## Step 4: Create Your Branch and Start Work
@@ -81,6 +86,10 @@ git commit -m "Add stakeholder impact role documentation"
 # Push to backup your work
 git push -u origin feat/agent-stakeholder-impact-teamB
 ```
+
+Checkpoint rule:
+- Commit after each coherent slice of completed functionality or documentation, not after every tiny edit.
+- Ask the agent to inspect the changed files and generate a descriptive commit message before committing.
 
 ## Step 5: Open a Pull Request
 

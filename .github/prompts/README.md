@@ -12,5 +12,6 @@ Store reusable task prompts as `*.prompt.md` files in this folder.
 Use lowercase, hyphenated filenames:
 
 - `ba-kickoff.prompt.md`
+- `git-operations.prompt.md`
 - `story-refinement.prompt.md`
 - `risk-assessment.prompt.md`

@@ -2,6 +2,11 @@
 
 This guide teaches the branch-based workflow for contributing BA agents and documentation to this repository.
 
+If learners are using an IDE agent to carry out Git commands, pair this guide with:
+
+- [`.github/prompts/git-operations.prompt.md`](../.github/prompts/git-operations.prompt.md)
+- [`.github/instructions/git-operations.instructions.md`](../.github/instructions/git-operations.instructions.md)
+
 ## Learning Objectives
 
 By the end of this guide, you will be able to:
@@ -58,6 +63,7 @@ git pull origin main
 ```
 
 **Why:** This ensures you're building on the most recent approved changes and reduces conflicts later.
+Treat `origin/main` as the source of truth for that approved state.
 
 ### Step 2: Create Your Feature Branch
 
@@ -97,6 +103,7 @@ git commit -m "Add documentation for stakeholder impact role"
 - Start with a verb: "Add", "Update", "Fix", "Remove"
 - Be specific but concise
 - One logical change per commit
+- Checkpoint after a coherent working slice is complete, not before functionality is in place
 
 **Why:** Small commits make it easier to review, revert, and understand changes.
 

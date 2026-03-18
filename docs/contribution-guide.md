@@ -15,6 +15,7 @@ This repository uses a trunk-based workflow with:
 - **Feature branches** — short-lived, one agent/prompt per branch
 - **Squash merge** — clean linear history on `main`
 - **Team ownership** — one team per agent file to minimize conflicts
+- **Remote-first sync** — treat `origin/main` as the source of truth before branching, rebasing, or cleanup
 
 ## Branching
 
@@ -40,12 +41,18 @@ git pull origin main
 git checkout -b feat/agent-your-role-teamX
 ```
 
+If an IDE agent is performing Git operations, use:
+
+- [`.github/prompts/git-operations.prompt.md`](../.github/prompts/git-operations.prompt.md)
+- [`.github/instructions/git-operations.instructions.md`](../.github/instructions/git-operations.instructions.md)
+
 ## Pull Request Requirements
 
 ### Before Opening PR
 
 - [ ] Sync with latest `main` via rebase
 - [ ] All commits have clear messages
+- [ ] Work was checkpointed after coherent completed slices, not partial fragments
 - [ ] Frontmatter validated (YAML syntax)
 - [ ] Tested with 2+ realistic scenarios
 - [ ] PR scope is small (one agent + related docs)
