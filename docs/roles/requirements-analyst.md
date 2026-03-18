@@ -15,7 +15,7 @@ Invoke this agent when:
 
 ## Agent File
 
-[`.github/agents/requirements-analyst.agent.md`](../.github/agents/requirements-analyst.agent.md)
+[`.github/agents/requirements-analyst/requirements-analyst.agent.md`](../../.github/agents/requirements-analyst/requirements-analyst.agent.md)
 
 ## Input Expectations
 

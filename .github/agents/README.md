@@ -1,19 +1,20 @@
 # Custom Agents
 
-Store shared team agents as `*.agent.md` files in this folder.
+Store shared team agents as packaged folders in this directory.
 
 ## Naming
 
-Use lowercase, hyphenated filenames:
+Use lowercase, hyphenated package names and filenames:
 
-- `requirements-analyst.agent.md`
-- `stakeholder-impact.agent.md`
-- `process-mapper.agent.md`
-- `psd-a-normalizer.agent.md`
+- `requirements-analyst/requirements-analyst.agent.md`
+- `stakeholder-impact/stakeholder-impact.agent.md`
+- `process-mapper/process-mapper.agent.md`
+- `problem-statement-decomposition/a-normalizer.agent.md`
 
 ## Expectations
 
-- Keep each agent focused on one role.
+- Keep each package focused on one role or one cohesive workflow.
+- Keep each `.agent.md` file focused on one role or one PSD stage.
 - Use minimal tools for the role.
 - Include a keyword-rich `description` that starts with `Use when:`.
 - Add or update examples in `docs/examples/` when behavior changes.

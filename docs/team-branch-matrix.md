@@ -12,11 +12,11 @@ This document maps teams to their assigned agent roles, branch names, and owned 
 
 | Team | Agent Role | Branch Name | Owned Files | Status |
 |------|------------|-------------|-------------|--------|
-| Team A | Requirements Analyst | `feat/agent-requirements-analyst-teamA` | `.github/agents/requirements-analyst.agent.md`<br>`docs/roles/requirements-analyst.md` | ✅ Complete |
-| Team B | Stakeholder Impact | `feat/agent-stakeholder-impact-teamB` | `.github/agents/stakeholder-impact.agent.md`<br>`docs/roles/stakeholder-impact.md` | 🔄 In Progress |
-| Team C | Process Mapper | `feat/agent-process-mapper-teamC` | `.github/agents/process-mapper.agent.md`<br>`docs/roles/process-mapper.md` | 📝 Not Started |
-| Team D | BA Review | `feat/agent-ba-review-teamD` | `.github/agents/ba-review.agent.md`<br>`docs/roles/ba-review.md` | 📝 Not Started |
-| Team E | Acceptance Criteria | `feat/agent-acceptance-criteria-teamE` | `.github/agents/acceptance-criteria.agent.md`<br>`docs/roles/acceptance-criteria.md` | 📝 Not Started |
+| Team A | Requirements Analyst | `feat/agent-requirements-analyst-teamA` | `.github/agents/requirements-analyst/requirements-analyst.agent.md`<br>`docs/roles/requirements-analyst.md` | ✅ Complete |
+| Team B | Stakeholder Impact | `feat/agent-stakeholder-impact-teamB` | `.github/agents/stakeholder-impact/stakeholder-impact.agent.md`<br>`docs/roles/stakeholder-impact.md` | 🔄 In Progress |
+| Team C | Process Mapper | `feat/agent-process-mapper-teamC` | `.github/agents/process-mapper/process-mapper.agent.md`<br>`docs/roles/process-mapper.md` | 📝 Not Started |
+| Team D | BA Review | `feat/agent-ba-review-teamD` | `.github/agents/ba-review/ba-review.agent.md`<br>`docs/roles/ba-review.md` | 📝 Not Started |
+| Team E | Acceptance Criteria | `feat/agent-acceptance-criteria-teamE` | `.github/agents/acceptance-criteria/acceptance-criteria.agent.md`<br>`docs/roles/acceptance-criteria.md` | 📝 Not Started |
 
 ## Branch Status Legend
 

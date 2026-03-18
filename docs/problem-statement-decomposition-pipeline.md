@@ -4,12 +4,12 @@ This is the canonical orchestration guide for the Problem Statement Decompositio
 
 ## Stage order (A -> F)
 
-1. **A_Normalizer**: [`.github/agents/psd-a-normalizer.agent.md`](../.github/agents/psd-a-normalizer.agent.md)
-2. **B_Extractor**: [`.github/agents/psd-b-extractor.agent.md`](../.github/agents/psd-b-extractor.agent.md)
-3. **C_Classifier**: [`.github/agents/psd-c-classifier.agent.md`](../.github/agents/psd-c-classifier.agent.md)
-4. **D_Auditor**: [`.github/agents/psd-d-auditor.agent.md`](../.github/agents/psd-d-auditor.agent.md)
-5. **E_Packager**: [`.github/agents/psd-e-packager.agent.md`](../.github/agents/psd-e-packager.agent.md)
-6. **F_ExcelFormatter**: [`.github/agents/psd-f-excel-formatter.agent.md`](../.github/agents/psd-f-excel-formatter.agent.md)
+1. **A_Normalizer**: [`.github/agents/problem-statement-decomposition/a-normalizer.agent.md`](../.github/agents/problem-statement-decomposition/a-normalizer.agent.md)
+2. **B_Extractor**: [`.github/agents/problem-statement-decomposition/b-extractor.agent.md`](../.github/agents/problem-statement-decomposition/b-extractor.agent.md)
+3. **C_Classifier**: [`.github/agents/problem-statement-decomposition/c-classifier.agent.md`](../.github/agents/problem-statement-decomposition/c-classifier.agent.md)
+4. **D_Auditor**: [`.github/agents/problem-statement-decomposition/d-auditor.agent.md`](../.github/agents/problem-statement-decomposition/d-auditor.agent.md)
+5. **E_Packager**: [`.github/agents/problem-statement-decomposition/e-packager.agent.md`](../.github/agents/problem-statement-decomposition/e-packager.agent.md)
+6. **F_ExcelFormatter**: [`.github/agents/problem-statement-decomposition/f-excel-formatter.agent.md`](../.github/agents/problem-statement-decomposition/f-excel-formatter.agent.md)
 
 ## Input/output handoff
 
@@ -27,7 +27,7 @@ This is the canonical orchestration guide for the Problem Statement Decompositio
 ### For human users
 
 1. Collect the raw source text (email, transcript, ticket, notes, or document excerpt).
-2. Invoke `psd-a-normalizer.agent.md` with the raw text.
+2. Invoke `problem-statement-decomposition/a-normalizer.agent.md` with the raw text.
 3. Pass each stage output to the next stage in strict order.
 4. Use `E_OUT` for review and `F_ExcelFormatter` for spreadsheet delivery.
 5. If a stage returns an error object, fix input validity and rerun that stage.
