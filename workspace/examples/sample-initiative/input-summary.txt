@@ -1,0 +1,19 @@
+initiative_name: Sample intake process improvement
+business_objective: Reduce intake delays and rework for new service requests
+decision_needed: Determine whether the problem is primarily process, stakeholder adoption, or unclear requirements
+source_materials:
+- stakeholder interview notes
+- current process summary
+- issue log excerpt
+
+known_constraints:
+- no net new headcount
+- implementation must fit current semester timeline
+- reporting must support faculty review
+
+analysis_goal: Identify the best first analysis path and produce reviewable BA outputs
+preferred_starting_agent: PSD Orchestrator or Process Mapper
+open_questions:
+- Which stakeholder groups experience the highest friction?
+- Which handoffs cause the most delay?
+- What requirements are currently ambiguous?

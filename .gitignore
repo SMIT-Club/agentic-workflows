@@ -75,3 +75,9 @@ ENV/
 **/output/*.pdf
 **/output/*.docx
 **/results/
+
+# BA workspace folders
+workspace/inputs/**
+!workspace/inputs/.gitignore
+workspace/outputs/**
+!workspace/outputs/.gitignore
