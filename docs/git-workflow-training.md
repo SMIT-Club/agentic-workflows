@@ -89,8 +89,8 @@ Examples:
 Edit your assigned files, then commit incrementally:
 
 ```powershell
-# Edit .github/agents/stakeholder-impact/stakeholder-impact.agent.md
-git add .github/agents/stakeholder-impact/stakeholder-impact.agent.md
+# Edit .github/agents/stakeholder-impact.agent.md
+git add .github/agents/stakeholder-impact.agent.md
 git commit -m "Add stakeholder impact analyzer agent skeleton"
 
 # Edit docs/roles/stakeholder-impact.md

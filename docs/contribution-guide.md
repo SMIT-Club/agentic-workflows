@@ -6,6 +6,7 @@ This guide provides the workflow for contributing BA agents, prompts, and docume
 
 - **Full Git workflow training:** See [docs/git-workflow-training.md](git-workflow-training.md)
 - **Team assignments:** See [docs/team-branch-matrix.md](team-branch-matrix.md)
+- **Agent packaging:** See [docs/agents-packaging.md](agents-packaging.md)
 - **PR template:** Auto-loaded when you create a PR
 
 ## Overview
@@ -64,6 +65,7 @@ If an IDE agent is performing Git operations, use:
 - Updated role documentation in `docs/roles/*.md` (for agent changes)
 - **Do NOT update `docs/agent-catalog.md`** — integrator will handle this after merge
 - Do not create new runtime workflow assets under `workflows/` (use `.github/agents/` + `docs/` orchestration docs)
+- Do not place non-agent markdown files directly under `.github/agents/`; keep supporting docs in `docs/`
 - At least one usage example in PR description
 - Reviewer notes describing expected behavior changes
 

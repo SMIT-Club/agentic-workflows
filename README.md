@@ -6,7 +6,7 @@ Business analysis agents and pipeline specifications for structured analysis, de
 
 This repository is now **agent-first**:
 
-- Runtime behavior is defined in packaged agent specs under `.github/agents/`
+- Runtime behavior is defined in agent specs under `.github/agents/`
 - Usage and orchestration guidance is defined in `docs/`
 - Legacy `workflows/` assets are deprecated and archived for reference
 
@@ -15,7 +15,7 @@ This repository is now **agent-first**:
 ```text
 itba-agentic-workflows/
 |-- .github/
-|   |-- agents/                   # Canonical shared agent packages and specs
+|   |-- agents/                   # Shared agent specs and the PSD workflow package
 |   |-- skills/                   # Reusable procedural Copilot skills
 |   |-- prompts/                  # Task-focused prompt templates
 |   |-- instructions/             # Shared instruction files
@@ -52,6 +52,8 @@ Quick links:
 
 The PSD pipeline is defined by six dedicated agents in one package:
 
+Keep this package together when you want the full PSD workflow to remain co-located under a single agent package.
+
 1. `.github/agents/problem-statement-decomposition/a-normalizer.agent.md`
 2. `.github/agents/problem-statement-decomposition/b-extractor.agent.md`
 3. `.github/agents/problem-statement-decomposition/c-classifier.agent.md`
@@ -82,7 +84,7 @@ Legacy workflow-stage markdown files were moved to:
 
 ## Contributing
 
-- Add or update agent behavior in the appropriate package under `.github/agents/`
+- Add or update agent behavior in the appropriate file or package under `.github/agents/`
 - Update matching documentation in `docs/`
 - Do not use `workflows/` for new runtime assets
 

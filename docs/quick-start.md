@@ -63,8 +63,8 @@ git branch
 ```
 
 **Edit your agent file:**
-- Open your assigned file in its package under `.github/agents/` (or create the package if new)
-- Use an existing agent as a template (e.g., `requirements-analyst/requirements-analyst.agent.md`)
+- Open your assigned file under `.github/agents/` (or create a package only when a workflow needs multiple related agents)
+- Use an existing agent as a template (e.g., `requirements-analyst.agent.md`)
 - Include YAML frontmatter: `name`, `description`, `tools`, `user-invocable`
 - Write clear constraints, approach, and output format
 - Do not add new runtime assets under `workflows/` (deprecated; use `.github/agents/` + `docs/`)
@@ -77,7 +77,7 @@ git branch
 **Commit incrementally:**
 ```powershell
 # After agent skeleton
-git add .github/agents/your-agent/your-agent.agent.md
+git add .github/agents/your-agent.agent.md
 git commit -m "Add stakeholder impact agent skeleton"
 
 # After role doc
