@@ -4,21 +4,31 @@ Store shared team agents under `.github/agents/`.
 
 ## Naming
 
-Use lowercase, hyphenated filenames for single-file agents, and package folders only when multiple related agents must stay together:
+Use lowercase, hyphenated filenames. Group workflow families by prefix rather than by subfolder:
 
 - `requirements-analyst.agent.md`
 - `stakeholder-impact.agent.md`
 - `process-mapper.agent.md`
-- `problem-statement-decomposition/a-normalizer.agent.md`
+- `psd-orchestrator.agent.md`
+- `psd-a-normalizer.agent.md`
 
 ## Expectations
 
 - Keep single-role agents as top-level `.agent.md` files.
-- Use a package folder only for one cohesive multi-agent workflow such as PSD.
+- Keep workflow families as top-level `.agent.md` files that share a workflow prefix.
 - Keep each `.agent.md` file focused on one role or one PSD stage.
 - Use minimal tools for the role.
 - Include a keyword-rich `description` that starts with `Use when:`.
 - Add or update examples in `docs/examples/` when behavior changes.
+
+## Workflow taxonomy
+
+Use the convention in [docs/agent-taxonomy.md](agent-taxonomy.md) to connect:
+
+- a workflow orchestrator
+- its stage agents
+- their shared workflow label
+- their upstream and downstream handoffs
 
 ## Loader Note
 

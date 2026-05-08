@@ -63,7 +63,7 @@ git branch
 ```
 
 **Edit your agent file:**
-- Open your assigned file under `.github/agents/` (or create a package only when a workflow needs multiple related agents)
+- Open your assigned file under `.github/agents/` and use a shared workflow prefix when the agent belongs to a staged family
 - Use an existing agent as a template (e.g., `requirements-analyst.agent.md`)
 - Include YAML frontmatter: `name`, `description`, `tools`, `user-invocable`
 - Write clear constraints, approach, and output format

@@ -7,6 +7,7 @@ This guide provides the workflow for contributing BA agents, prompts, and docume
 - **Full Git workflow training:** See [docs/git-workflow-training.md](git-workflow-training.md)
 - **Team assignments:** See [docs/team-branch-matrix.md](team-branch-matrix.md)
 - **Agent packaging:** See [docs/agents-packaging.md](agents-packaging.md)
+- **Agent taxonomy:** See [docs/agent-taxonomy.md](agent-taxonomy.md)
 - **PR template:** Auto-loaded when you create a PR
 
 ## Overview

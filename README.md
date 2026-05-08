@@ -42,6 +42,7 @@ itba-agentic-workflows/
 
 Quick links:
 - [Agent Catalog](docs/agent-catalog.md)
+- [Agent Taxonomy](docs/agent-taxonomy.md)
 - [PSD Pipeline Guide](docs/problem-statement-decomposition-pipeline.md)
 - [Contribution Guide](docs/contribution-guide.md)
 - [Quick Start](docs/quick-start.md)
@@ -50,19 +51,21 @@ Quick links:
 
 ## Problem Statement Decomposition (PSD)
 
-The PSD pipeline is defined by six dedicated agents in one package:
+The PSD workflow family now uses a top-level `psd-` taxonomy:
 
-Keep this package together when you want the full PSD workflow to remain co-located under a single agent package.
+0. `.github/agents/psd-orchestrator.agent.md`
+1. `.github/agents/psd-a-normalizer.agent.md`
+2. `.github/agents/psd-b-extractor.agent.md`
+3. `.github/agents/psd-c-classifier.agent.md`
+4. `.github/agents/psd-d-auditor.agent.md`
+5. `.github/agents/psd-e-packager.agent.md`
+6. `.github/agents/psd-f-excel-formatter.agent.md`
 
-1. `.github/agents/problem-statement-decomposition/a-normalizer.agent.md`
-2. `.github/agents/problem-statement-decomposition/b-extractor.agent.md`
-3. `.github/agents/problem-statement-decomposition/c-classifier.agent.md`
-4. `.github/agents/problem-statement-decomposition/d-auditor.agent.md`
-5. `.github/agents/problem-statement-decomposition/e-packager.agent.md`
-6. `.github/agents/problem-statement-decomposition/f-excel-formatter.agent.md`
+Use the orchestrator as the entrypoint for full runs, resume-from-breakpoint flows, and explicit A-F handoffs.
 
 Canonical orchestration and handoff contracts are documented in:
 - [docs/problem-statement-decomposition-pipeline.md](docs/problem-statement-decomposition-pipeline.md)
+- [docs/agent-taxonomy.md](docs/agent-taxonomy.md)
 
 Legacy workflow-stage markdown files were moved to:
 - `docs/archive/workflows/problem-statement-decomposition/`
@@ -84,7 +87,7 @@ Legacy workflow-stage markdown files were moved to:
 
 ## Contributing
 
-- Add or update agent behavior in the appropriate file or package under `.github/agents/`
+- Add or update agent behavior in the appropriate agent file under `.github/agents/`
 - Update matching documentation in `docs/`
 - Do not use `workflows/` for new runtime assets
 
