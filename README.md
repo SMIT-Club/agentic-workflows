@@ -26,6 +26,11 @@ itba-agentic-workflows/
 |   |-- problem-statement-decomposition-pipeline.md
 |   |-- roles/                    # Role usage documentation
 |   `-- archive/workflows/        # Frozen legacy workflow files
+|-- workspace/
+|   |-- inputs/                   # User-provided BA source material (folder tracked, contents ignored)
+|   |-- outputs/                  # Agent-generated working artifacts (folder tracked, contents ignored)
+|   |-- templates/                # Tracked starter templates for consistent inputs
+|   `-- examples/                 # Tracked safe sample inputs for learning
 |-- workflows/
 |   `-- README.md                 # Deprecation notice + redirects
 `-- README.md
@@ -46,7 +51,9 @@ Quick links:
 - [PSD Pipeline Guide](docs/problem-statement-decomposition-pipeline.md)
 - [Contribution Guide](docs/contribution-guide.md)
 - [Quick Start](docs/quick-start.md)
+- [Workspace Setup Prompt](.github/prompts/workspace-setup.prompt.md)
 - [Git Operations Prompt](.github/prompts/git-operations.prompt.md)
+- [BA Workspace Skill](.github/skills/ba-workspace/SKILL.md)
 - [Git Operations Skill](.github/skills/git-operations/SKILL.md)
 
 ## Problem Statement Decomposition (PSD)
@@ -84,6 +91,19 @@ Legacy workflow-stage markdown files were moved to:
 2. Follow the specified constraints and output contract
 3. For PSD, execute stages in A-F order using the pipeline guide
 4. Pass outputs exactly as required between stages
+
+## BA Workspace Convention
+
+Use the `workspace/` directory to keep learner inputs and agent outputs predictable:
+
+| Path | Purpose | Tracking |
+|---|---|---|
+| `workspace/inputs/` | Raw project text, notes, transcripts, drafts, and source material for analysis | Folder is committed; user files remain untracked |
+| `workspace/outputs/` | Working deliverables produced during analysis | Folder is committed; generated files remain untracked |
+| `workspace/templates/` | Starter templates that normalize how learners package inputs | Tracked |
+| `workspace/examples/` | Safe sample materials for learning and walkthroughs | Tracked |
+
+This keeps the workspace lightweight while still giving new users a ready-made place to put context before invoking agents.
 
 ## Contributing
 

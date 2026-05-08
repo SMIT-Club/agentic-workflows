@@ -1,0 +1,17 @@
+initiative_name:
+business_objective:
+decision_needed:
+source_materials:
+- interview-notes
+- process-notes
+- stakeholder-comments
+
+known_constraints:
+- timeline
+- policy
+- system
+
+analysis_goal:
+preferred_starting_agent:
+open_questions:
+- 
