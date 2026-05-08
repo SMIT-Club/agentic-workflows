@@ -25,6 +25,7 @@ This catalog is the quick index for all shared BA agents and prompts.
 | Name | File | Use When | Owner |
 |---|---|---|---|
 | BA Kickoff | [ba-kickoff.prompt.md](../.github/prompts/ba-kickoff.prompt.md) | New initiative kickoff and discovery planning | _TBD_ |
+| Workspace Setup | [workspace-setup.prompt.md](../.github/prompts/workspace-setup.prompt.md) | Local repository setup, Copilot authentication checks, and workspace folder preparation | _TBD_ |
 
 ## Adding New Entries
 

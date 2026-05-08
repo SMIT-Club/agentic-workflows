@@ -1,8 +1,17 @@
 # Quick Start Guide
 
-Get started contributing BA agents to this repository in 5 steps.
+Get started contributing BA agents to this repository in 6 steps.
 
 ## Step 1: Set Up Your Environment
+
+Before cloning the repository, make sure you have:
+
+- A GitHub account
+- Access to GitHub Copilot in VS Code
+- Git installed locally
+- VS Code installed locally
+
+For student contributors, GitHub Student Developer Pack is the recommended path for activating student benefits and related tooling access.
 
 ```powershell
 # Clone repository (if not already done)
@@ -21,7 +30,38 @@ git config --global user.email "you@example.com"
 code .
 ```
 
-## Step 2: Check Your Team Assignment
+Example setup prompt for Copilot Chat:
+
+```text
+Help me set up this repository locally. Clone https://github.com/NAIT-ITBA/itba-agentic-workflows.git into my working folder, open it in VS Code, and make sure GitHub and GitHub Copilot are authenticated before we continue.
+```
+
+Reusable prompt file:
+
+- [`.github/prompts/workspace-setup.prompt.md`](../.github/prompts/workspace-setup.prompt.md)
+
+## Step 2: Prepare the BA Workspace
+
+This repository includes a lightweight `workspace/` structure for learner inputs and agent outputs:
+
+- `workspace/inputs/` for raw source material
+- `workspace/outputs/` for generated working artifacts
+- `workspace/templates/` for tracked starter templates
+- `workspace/examples/` for safe sample materials
+
+Use the tracked template file in `workspace/templates/` to package inputs consistently before invoking agents.
+
+Example workspace prompt for Copilot Chat:
+
+```text
+Read the materials I placed in workspace/inputs/<initiative-name>/ and recommend the best starting agent. If the inputs are messy or unstructured, start with PSD Orchestrator. Otherwise, choose the BA agent that best fits the analysis goal and explain the expected output.
+```
+
+Reusable skill:
+
+- [`.github/skills/ba-workspace/SKILL.md`](../.github/skills/ba-workspace/SKILL.md)
+
+## Step 3: Check Your Team Assignment
 
 Open [docs/team-branch-matrix.md](team-branch-matrix.md) and find:
 - Your team name (e.g., Team B)
@@ -29,7 +69,7 @@ Open [docs/team-branch-matrix.md](team-branch-matrix.md) and find:
 - Your branch name (e.g., `feat/agent-stakeholder-impact-teamB`)
 - Your owned files (agent + role doc)
 
-## Step 3: Read the Docs
+## Step 4: Read the Docs
 
 Before writing code, review these essential guides:
 
@@ -48,7 +88,7 @@ If you are using an IDE agent to help with Git, also use:
 
 **Total reading time: ~35 minutes**
 
-## Step 4: Create Your Branch and Start Work
+## Step 5: Create Your Branch and Start Work
 
 ```powershell
 # Get latest main
@@ -92,7 +132,7 @@ Checkpoint rule:
 - Commit after each coherent slice of completed functionality or documentation, not after every tiny edit.
 - Ask the agent to inspect the changed files and generate a descriptive commit message before committing.
 
-## Step 5: Open a Pull Request
+## Step 6: Open a Pull Request
 
 **Before opening PR:**
 ```powershell

@@ -6,6 +6,7 @@ You are helping prepare a business analysis kickoff package.
 
 ## Inputs
 
+- Materials staged in `workspace/inputs/<initiative-name>/` when available
 - Business objective
 - Stakeholders
 - Constraints
@@ -18,6 +19,8 @@ You are helping prepare a business analysis kickoff package.
 2. Produce an assumptions list.
 3. Identify high-risk unknowns.
 4. Propose first-pass deliverables for week 1 and week 2.
+5. If the user has not provided source material yet, tell them exactly what to place in `workspace/inputs/<initiative-name>/` before proceeding.
+6. If the user wants a persisted artifact, write the kickoff package to `workspace/outputs/<initiative-name>/`.
 
 ## Output Format
 

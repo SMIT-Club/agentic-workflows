@@ -13,5 +13,6 @@ Use lowercase, hyphenated filenames:
 
 - `ba-kickoff.prompt.md`
 - `git-operations.prompt.md`
+- `workspace-setup.prompt.md`
 - `story-refinement.prompt.md`
 - `risk-assessment.prompt.md`
