@@ -50,6 +50,7 @@ Quick links:
 - [Agent Taxonomy](docs/agent-taxonomy.md)
 - [PSD Pipeline Guide](docs/problem-statement-decomposition-pipeline.md)
 - [Contribution Guide](docs/contribution-guide.md)
+- [GitHub Project CLI Operations Guide](docs/github-project-cli-operations-guide.md)
 - [Quick Start](docs/quick-start.md)
 - [Workspace Setup Prompt](.github/prompts/workspace-setup.prompt.md)
 - [Git Operations Prompt](.github/prompts/git-operations.prompt.md)
