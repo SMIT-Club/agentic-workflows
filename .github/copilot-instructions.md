@@ -1,6 +1,6 @@
 # Repository Copilot Instructions
 
-These instructions apply across this repository unless a more specific prompt, instruction, skill, or agent file provides narrower guidance.
+These instructions are the repository-wide invariant layer. Keep them limited to stable rules that should apply broadly unless a narrower prompt, instruction, skill, or agent file overrides with more specific guidance.
 
 ## Operating Priorities
 
@@ -10,7 +10,7 @@ These instructions apply across this repository unless a more specific prompt, i
 - Keep changes scoped, reviewable, and easy to explain.
 - Preserve repository conventions before introducing new structure.
 
-## Git Workflow Rules
+## Repository Workflow Rules
 
 - Branch from updated `main`.
 - Use short-lived feature branches for changes.
@@ -28,10 +28,11 @@ These instructions apply across this repository unless a more specific prompt, i
 
 ## Orchestration Guidance
 
-- Use prompts for focused task entry points.
-- Use instructions for broad behavioural rules.
+- Use prompts for focused task entry points, not full procedures.
+- Use instructions for narrow cross-cutting guardrails with explicit scope.
 - Use skills for detailed, reusable procedural workflows.
 - Use agents for persistent specialist roles with narrower scope and defined constraints.
+- Keep detailed operating steps out of this file when they can live in a scoped instruction or skill.
 
 ## Documentation Expectations
 

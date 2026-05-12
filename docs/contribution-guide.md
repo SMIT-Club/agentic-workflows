@@ -45,9 +45,8 @@ git checkout -b feat/agent-your-role-teamX
 
 If an IDE agent is performing Git operations, use:
 
-- [`.github/prompts/git-operations.prompt.md`](../.github/prompts/git-operations.prompt.md)
-- [`.github/instructions/git-operations.instructions.md`](../.github/instructions/git-operations.instructions.md)
-- [`.github/skills/git-operations/SKILL.md`](../.github/skills/git-operations/SKILL.md)
+- Start with [`.github/prompts/git-operations.prompt.md`](../.github/prompts/git-operations.prompt.md)
+- Use [Copilot Guidance Architecture](copilot-guidance-architecture.md) to find the matching skill and guardrail files
 
 ## Pull Request Requirements
 

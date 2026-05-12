@@ -16,10 +16,10 @@ This repository is now **agent-first**:
 itba-agentic-workflows/
 |-- .github/
 |   |-- agents/                   # Shared agent specs and the PSD workflow package
-|   |-- skills/                   # Reusable procedural Copilot skills
-|   |-- prompts/                  # Task-focused prompt templates
-|   |-- instructions/             # Shared instruction files
-|   |-- copilot-instructions.md   # Repository-wide Copilot behaviour rules
+|   |-- skills/                   # Canonical step-by-step Copilot workflows
+|   |-- prompts/                  # Thin task entrypoints for common asks
+|   |-- instructions/             # Scoped guardrails and reusable rules
+|   |-- copilot-instructions.md   # Repository-wide invariants and behavior rules
 |   `-- pull_request_template.md
 |-- docs/
 |   |-- agent-catalog.md          # Index of agents and prompts
@@ -48,14 +48,11 @@ itba-agentic-workflows/
 Quick links:
 - [Agent Catalog](docs/agent-catalog.md)
 - [Agent Taxonomy](docs/agent-taxonomy.md)
+- [Copilot Guidance Architecture](docs/copilot-guidance-architecture.md)
 - [PSD Pipeline Guide](docs/problem-statement-decomposition-pipeline.md)
 - [Contribution Guide](docs/contribution-guide.md)
 - [GitHub Project CLI Operations Guide](docs/github-project-cli-operations-guide.md)
 - [Quick Start](docs/quick-start.md)
-- [Workspace Setup Prompt](.github/prompts/workspace-setup.prompt.md)
-- [Git Operations Prompt](.github/prompts/git-operations.prompt.md)
-- [BA Workspace Skill](.github/skills/ba-workspace/SKILL.md)
-- [Git Operations Skill](.github/skills/git-operations/SKILL.md)
 
 ## Problem Statement Decomposition (PSD)
 
@@ -109,6 +106,7 @@ This keeps the workspace lightweight while still giving new users a ready-made p
 ## Contributing
 
 - Add or update agent behavior in the appropriate agent file under `.github/agents/`
+- Keep prompt, skill, and instruction changes aligned with the guidance hierarchy in [docs/copilot-guidance-architecture.md](docs/copilot-guidance-architecture.md)
 - Update matching documentation in `docs/`
 - Do not use `workflows/` for new runtime assets
 

@@ -2,48 +2,27 @@
 applyTo: "**"
 ---
 
-# Git Operations Instruction
+# Git Operations Guardrails
 
 Use this instruction when the user asks an agent to perform Git operations for this repository.
 
-## Operating Model
+This file owns the repository-specific Git guardrails. Keep detailed step-by-step procedures in `.github/skills/git-operations/SKILL.md` and use prompts only as thin task entrypoints.
+
+## Required Inspection
+
+- `git status --short --branch`
+- `git branch --list`
+- `git remote -v`
+
+## Repository Rules
 
 - Treat `origin/main` as the source of truth for the approved repository state.
-- Inspect repository state before acting:
-  - `git status --short --branch`
-  - `git branch --list`
-  - `git remote -v`
 - Prefer safe, non-destructive commands first.
 - Explain the intended Git operation briefly before executing it.
-
-## Approved Agent Workflows
-
-### 1. Start Work
-
 - Sync local `main` from `origin/main` before branching.
-- Create new work from updated `main`.
-- Use descriptive branch names that match repo conventions.
-
-### 2. Checkpoint Work
-
-- Only checkpoint after a coherent unit of functionality or documentation is complete.
-- Review changed files before staging.
-- Stage only the files that belong to the checkpoint scope.
-- Write a descriptive commit message that reflects the real change, not a placeholder.
-
-### 3. Prepare a PR
-
-- Sync the working branch with latest `main` before PR readiness.
-- If history rewriting is appropriate for the branch workflow, prefer `rebase`.
-- Surface conflicts clearly and stop for user direction if resolution is ambiguous.
-- Push the updated branch after validation.
-
-### 4. Post-Merge Cleanup
-
-- Return local repo to `main`.
-- Sync local `main` to `origin/main`.
-- Delete merged local branches when safe.
-- Prune deleted remote refs.
+- Review changed files before staging and stage only the files that belong to the checkpoint scope.
+- Sync the working branch with latest `main` before PR readiness and prefer `rebase` when history rewriting fits the workflow.
+- Return local repo to `main`, sync it, and prune merged branches only when cleanup is safe.
 
 ## Safety Rules
 

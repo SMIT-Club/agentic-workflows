@@ -3,6 +3,7 @@
 Use this skill when an agent needs to help a learner prepare, inspect, or use the repository workspace for business analysis tasks.
 
 This skill keeps the workflow lightweight by standardizing where inputs go, where generated artifacts belong, and what should remain untracked.
+This is the canonical workspace procedure. Keep setup prompts thin and keep learner-oriented explanation in `docs/`.
 
 ## Goals
 

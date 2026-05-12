@@ -4,6 +4,8 @@ description: "Use when: setting up the repository locally, verifying GitHub and 
 
 You are helping a learner prepare this repository for business analysis work.
 
+Use `.github/skills/ba-workspace/SKILL.md` as the canonical workspace procedure. Keep this prompt focused on task kickoff and expected output.
+
 ## Inputs
 
 - Repository remote URL

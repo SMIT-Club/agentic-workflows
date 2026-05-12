@@ -22,6 +22,8 @@ This catalog is the quick index for all shared BA agents and prompts.
 
 ## Prompts
 
+Prompts are thin task entrypoints. Detailed workflow steps should live in skills or scoped instructions as described in [Copilot Guidance Architecture](copilot-guidance-architecture.md).
+
 | Name | File | Use When | Owner |
 |---|---|---|---|
 | BA Kickoff | [ba-kickoff.prompt.md](../.github/prompts/ba-kickoff.prompt.md) | New initiative kickoff and discovery planning | _TBD_ |

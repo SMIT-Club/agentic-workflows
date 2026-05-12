@@ -3,6 +3,7 @@
 Use this skill when an agent needs to carry out repository Git workflows on behalf of a learner.
 
 This skill assumes the learner is delegating the Git operations to the agent rather than typing commands manually.
+This is the canonical step-by-step Git workflow for the repository. Keep repository-wide invariants in `.github/copilot-instructions.md`, narrow guardrails in `.github/instructions/git-operations.instructions.md`, and prompts as thin task launchers.
 
 ## Goals
 

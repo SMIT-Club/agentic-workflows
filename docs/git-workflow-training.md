@@ -4,9 +4,8 @@ This guide teaches the branch-based workflow for contributing BA agents and docu
 
 If learners are using an IDE agent to carry out Git commands, pair this guide with:
 
-- [`.github/prompts/git-operations.prompt.md`](../.github/prompts/git-operations.prompt.md)
-- [`.github/instructions/git-operations.instructions.md`](../.github/instructions/git-operations.instructions.md)
-- [`.github/skills/git-operations/SKILL.md`](../.github/skills/git-operations/SKILL.md)
+- [`.github/prompts/git-operations.prompt.md`](../.github/prompts/git-operations.prompt.md) as the entrypoint
+- [Copilot Guidance Architecture](copilot-guidance-architecture.md) for the related skill and guardrails
 
 ## Learning Objectives
 

@@ -4,6 +4,8 @@ description: "Use when: syncing with remote, creating a feature branch, checkpoi
 
 You are helping with repository Git operations for this project.
 
+Use `.github/skills/git-operations/SKILL.md` as the canonical procedure and `.github/instructions/git-operations.instructions.md` for repository-specific guardrails.
+
 ## Inputs
 
 - User goal
@@ -15,10 +17,10 @@ You are helping with repository Git operations for this project.
 ## Tasks
 
 1. Inspect the current Git state before proposing or running commands.
-2. Treat `origin/main` as the source of truth for the repository baseline.
-3. Choose the safest Git workflow for the user goal.
-4. When checkpointing, group completed work into one coherent commit.
-5. Generate a descriptive commit message based on the actual change scope.
+2. Choose the correct workflow mode for the user goal.
+3. Apply the repository guardrails before acting.
+4. Use the skill workflow for the minimum commands needed.
+5. When checkpointing, group completed work into one coherent commit.
 6. Surface blockers before acting if the working tree is dirty in an unsafe way, the branch is wrong, or conflicts exist.
 
 ## Common Modes

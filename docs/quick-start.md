@@ -39,6 +39,7 @@ Help me set up this repository locally. Clone https://github.com/NAIT-ITBA/itba-
 Reusable prompt file:
 
 - [`.github/prompts/workspace-setup.prompt.md`](../.github/prompts/workspace-setup.prompt.md)
+- [Copilot Guidance Architecture](copilot-guidance-architecture.md)
 
 ## Step 2: Prepare the BA Workspace
 
@@ -57,9 +58,9 @@ Example workspace prompt for Copilot Chat:
 Read the materials I placed in workspace/inputs/<initiative-name>/ and recommend the best starting agent. If the inputs are messy or unstructured, start with PSD Orchestrator. Otherwise, choose the BA agent that best fits the analysis goal and explain the expected output.
 ```
 
-Reusable skill:
+Canonical workflow details:
 
-- [`.github/skills/ba-workspace/SKILL.md`](../.github/skills/ba-workspace/SKILL.md)
+- [Copilot Guidance Architecture](copilot-guidance-architecture.md)
 
 ## Step 3: Check Your Team Assignment
 
@@ -78,13 +79,13 @@ Before writing code, review these essential guides:
 | [Git Workflow Training](git-workflow-training.md) | Learn branch, commit, sync, PR workflow | 15 min |
 | [Contribution Guide](contribution-guide.md) | Understand PR requirements and review checklist | 10 min |
 | [Agent Catalog](agent-catalog.md) | See existing agents to avoid overlap | 5 min |
+| [Copilot Guidance Architecture](copilot-guidance-architecture.md) | See which guidance lives in instructions, prompts, skills, agents, and docs | 5 min |
 | [Role Doc Template](roles/requirements-analyst.md) | Example of what your role doc should contain | 5 min |
 
 If you are using an IDE agent to help with Git, also use:
 
-- [`.github/prompts/git-operations.prompt.md`](../.github/prompts/git-operations.prompt.md)
-- [`.github/instructions/git-operations.instructions.md`](../.github/instructions/git-operations.instructions.md)
-- [`.github/skills/git-operations/SKILL.md`](../.github/skills/git-operations/SKILL.md)
+- Start with [`.github/prompts/git-operations.prompt.md`](../.github/prompts/git-operations.prompt.md)
+- Use [Copilot Guidance Architecture](copilot-guidance-architecture.md) to find the matching skill and guardrails
 
 **Total reading time: ~35 minutes**
 
