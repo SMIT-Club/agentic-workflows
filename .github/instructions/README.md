@@ -6,6 +6,7 @@ Use these for narrow, reusable guardrails such as domain language, glossary rule
 
 Keep `applyTo` patterns specific to avoid loading irrelevant instructions into context.
 Keep step-by-step procedures in skills rather than duplicating them here.
+Keep instruction frontmatter minimal and consistent: `applyTo` is the required key unless platform support expands.
 
 Examples:
 

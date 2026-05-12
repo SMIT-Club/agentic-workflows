@@ -12,13 +12,16 @@ Use lowercase, hyphenated filenames. Group workflow families by prefix rather th
 - `psd-orchestrator.agent.md`
 - `psd-a-normalizer.agent.md`
 
+Related prompts, instructions, and skills should reuse the same capability slug where that artifact type exists. For skills, keep the required package format and use the slug as the folder name, for example `git-operations\SKILL.md` or `workspace-setup\SKILL.md`.
+
 ## Expectations
 
 - Keep single-role agents as top-level `.agent.md` files.
 - Keep workflow families as top-level `.agent.md` files that share a workflow prefix.
 - Keep each `.agent.md` file focused on one role or one PSD stage.
 - Use minimal tools for the role.
-- Include a keyword-rich `description` that starts with `Use when:`.
+- Include a keyword-rich `description` that starts with `Use when:` and keep it as a concise phrase in frontmatter.
+- Keep frontmatter concise and consistent: `name`, `description`, `tools`, and `user-invocable` only.
 - Add or update examples in `docs/examples/` when behavior changes.
 
 ## Workflow taxonomy

@@ -2,6 +2,8 @@
 
 This repository uses a layered guidance model so the same procedure does not get repeated across instructions, prompts, skills, and docs.
 
+Related prompts, instructions, and skills should share the same capability name. Skills still stay folder-packaged because the loader expects `<capability-name>/SKILL.md`.
+
 ## Guidance layers
 
 | Layer | Purpose | Canonical location | Keep here |
@@ -9,7 +11,7 @@ This repository uses a layered guidance model so the same procedure does not get
 | Repository invariants | Stable repo-wide rules and safety expectations | [`.github/copilot-instructions.md`](../.github/copilot-instructions.md) | Only rules that should load broadly |
 | Scoped guardrails | Narrow reusable rules for a defined scope | [`.github/instructions/`](../.github/instructions/) | Constraints, required checks, and blockers |
 | Task entrypoints | Lightweight launch text for common requests | [`.github/prompts/`](../.github/prompts/) | Inputs, goal framing, output shape |
-| Detailed procedures | Repeatable operational workflows | [`.github/skills/`](../.github/skills/) | Step-by-step task logic |
+| Reusable capabilities | Repeatable operational workflows that prompts and agents can invoke | [`.github/skills/`](../.github/skills/) | Canonical step-by-step task logic |
 | Specialist roles | Persistent agent behavior and contracts | [`.github/agents/`](../.github/agents/) | Role scope, constraints, output contracts |
 | Learner docs | Human-readable explanation and discovery | [`docs/`](./) | Explanations, onboarding, examples, links |
 
@@ -21,12 +23,21 @@ This repository uses a layered guidance model so the same procedure does not get
 4. If the content only helps a user start that workflow, keep it in a prompt and point to the skill.
 5. If the content is for learners reading the repository, keep it in `docs/` and link to the runtime files rather than duplicating them.
 
+## Skill packaging rule
+
+Use skill folders as reusable capability packages:
+
+- `.github/skills/git-operations/SKILL.md`
+- `.github/skills/workspace-setup/SKILL.md`
+
+Do not flatten skills into filenames such as `git-operations.SKILL.md` unless the platform explicitly documents support for that pattern.
+
 ## Current canonical mappings
 
 | Concern | Start here | Detailed procedure | Guardrails |
 |---|---|---|---|
 | Git operations | [`.github/prompts/git-operations.prompt.md`](../.github/prompts/git-operations.prompt.md) | [`.github/skills/git-operations/SKILL.md`](../.github/skills/git-operations/SKILL.md) | [`.github/instructions/git-operations.instructions.md`](../.github/instructions/git-operations.instructions.md) |
-| Workspace setup and readiness | [`.github/prompts/workspace-setup.prompt.md`](../.github/prompts/workspace-setup.prompt.md) | [`.github/skills/ba-workspace/SKILL.md`](../.github/skills/ba-workspace/SKILL.md) | [`.github/copilot-instructions.md`](../.github/copilot-instructions.md) and workspace conventions in `docs/` |
+| Workspace setup and readiness | [`.github/prompts/workspace-setup.prompt.md`](../.github/prompts/workspace-setup.prompt.md) | [`.github/skills/workspace-setup/SKILL.md`](../.github/skills/workspace-setup/SKILL.md) | [`.github/copilot-instructions.md`](../.github/copilot-instructions.md) and workspace conventions in `docs/` |
 | BA kickoff | [`.github/prompts/ba-kickoff.prompt.md`](../.github/prompts/ba-kickoff.prompt.md) | Use the relevant BA agent and role docs | Workspace conventions apply when persisting outputs |
 
 ## Maintenance rules
@@ -35,3 +46,4 @@ This repository uses a layered guidance model so the same procedure does not get
 - Do not move detailed workflow steps into `.github/copilot-instructions.md`.
 - Prefer linking to canonical files from `README.md` and `docs/` instead of restating the same bullets.
 - When a new workflow needs both a prompt and a skill, write the skill first and keep the prompt thin.
+- Reuse the same capability slug across related prompt, instruction, and skill artifacts.

@@ -1,6 +1,6 @@
 ---
 name: "PSD D Auditor"
-description: "Use when: auditing B_OUT and C_OUT for risks, policy issues, and elicitation gaps into deterministic D_OUT JSON."
+description: "Use when: auditing B_OUT and C_OUT for risks, policy issues, and elicitation gaps into deterministic D_OUT JSON"
 tools: [read, search]
 user-invocable: false
 ---

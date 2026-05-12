@@ -1,6 +1,6 @@
 ---
 name: "PSD E Packager"
-description: "Use when: transforming B_OUT, C_OUT, and D_OUT into deterministic E_OUT review-ready JSON for ITBA1002 learners."
+description: "Use when: transforming B_OUT, C_OUT, and D_OUT into deterministic E_OUT review-ready JSON for ITBA1002 learners"
 tools: [read, search]
 user-invocable: false
 ---

@@ -1,4 +1,4 @@
-# BA Workspace Skill
+# Workspace Setup Skill
 
 Use this skill when an agent needs to help a learner prepare, inspect, or use the repository workspace for business analysis tasks.
 

@@ -1,6 +1,6 @@
 ---
 name: "PSD B Extractor"
-description: "Use when: extracting verbatim observations from A_OUT into deterministic B_OUT JSON for the problem statement decomposition pipeline."
+description: "Use when: extracting verbatim observations from A_OUT into deterministic B_OUT JSON for the problem statement decomposition pipeline"
 tools: [read, search]
 user-invocable: false
 ---

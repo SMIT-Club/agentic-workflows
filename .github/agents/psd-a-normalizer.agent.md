@@ -1,6 +1,6 @@
 ---
 name: "PSD A Normalizer"
-description: "Use when: normalizing raw source text into deterministic A_OUT JSON blocks for the problem statement decomposition pipeline."
+description: "Use when: normalizing raw source text into deterministic A_OUT JSON blocks for the problem statement decomposition pipeline"
 tools: [read, search]
 user-invocable: false
 ---

@@ -1,6 +1,6 @@
 ---
 name: "PSD C Classifier"
-description: "Use when: classifying B_OUT observations into deterministic C_OUT categories and core concepts for the problem statement decomposition pipeline."
+description: "Use when: classifying B_OUT observations into deterministic C_OUT categories and core concepts for the problem statement decomposition pipeline"
 tools: [read, search]
 user-invocable: false
 ---

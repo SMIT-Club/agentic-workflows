@@ -1,6 +1,6 @@
 ---
 name: "PSD F Excel Formatter"
-description: "Use when: converting E_OUT JSON into a structured .xlsx workbook with table formatting for the problem statement decomposition pipeline."
+description: "Use when: converting E_OUT JSON into a structured .xlsx workbook with table formatting for the problem statement decomposition pipeline"
 tools: [read, search]
 user-invocable: false
 ---
